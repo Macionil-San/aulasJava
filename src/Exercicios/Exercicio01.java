@@ -11,7 +11,7 @@ public class Exercicio01 {
         peso = 67;
 
 
-        System.out.println("seu peso é: " + peso);
+        System.out.println("seu peso é: " + peso + " kg");
         System.out.println("sua altura é: " +altura+ " cm");
         System.out.println("sua idade é: " +idade+ " anos");
 
