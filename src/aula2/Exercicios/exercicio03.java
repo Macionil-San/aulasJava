@@ -13,6 +13,6 @@ public class exercicio03 {
         byte varByte = (byte) varShort;
 
 
-        System.out.println("o número digitado é (IN) " + varInt);
+        System.out.println("o número digitado é  " + varInt);
     }
 }
