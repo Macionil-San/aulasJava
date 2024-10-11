@@ -11,9 +11,9 @@ public class exercicio01 {
         peso = 67;
 
 
-        System.out.println("seu peso é: " + peso + " kg");
-        System.out.println("sua altura é: " +altura+ " cm");
-        System.out.println("sua idade é: " +idade+ " anos");
+        System.out.println("seu peso é: " + peso + " kg ");
+        System.out.println("sua altura é: " +altura+ " cm ");
+        System.out.println("sua idade é: " +idade+ " anos ");
 
     }
 }
