@@ -1,7 +1,8 @@
-package Exercicios;
+package exemplos;
+
 import java.util.Scanner;
 
-public class testes {
+public class Exercicio06 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -23,3 +24,4 @@ public class testes {
         scanner.close();
     }
 }
+
