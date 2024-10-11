@@ -13,7 +13,7 @@ public class exercicio02 {
         System.out.println("a multiplicação dos numeros é: " +resultado );
 
 
-        // resultado = (float) num01/num02;                                         PRIMEIRO JEITO DE FAZE
+        // resultado = (float) num01/num02;                                         PRIMEIRO JEITO DE FAZER
         // System.out.println("a divisão dos numeros é: " +resultado );
 
         float totalFloat, numFloat=2;
