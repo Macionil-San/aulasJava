@@ -1,6 +1,6 @@
-package Exercicios;
+package aula2.exemplos;
 
-public class exercicio02 {
+public class Exercicio02 {
     public static void main(String[] args) {
         int num01= 2, num02 = 4;
         float resultado;
@@ -13,7 +13,7 @@ public class exercicio02 {
         System.out.println("a multiplicação dos numeros é: " +resultado );
 
 
-        // resultado = (float) num01/num02;                                         PRIMEIRO JEITO DE FAZER
+         // resultado = (float) num01/num02;                                          PRIMEIRO JEITO DE FAZER
         // System.out.println("a divisão dos numeros é: " +resultado );
 
         float totalFloat, numFloat=2;
