@@ -9,10 +9,11 @@ public class exercicio03 {
         System.out.print("Digite um numero inteiro:  ");
 
         int varInt = scanner.nextInt();
-        short varShort = (short) varInt;
-        byte varByte = (byte) varShort;
+        double varDouble = varInt;
 
 
-        System.out.println("o número digitado  " + varInt);
+
+        System.out.println("o número digitado (int): " + varInt);
+        System.out.println("o número digitado (double): " + varDouble);
     }
 }

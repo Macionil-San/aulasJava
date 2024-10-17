@@ -1,6 +1,6 @@
 package aula2.exemplos;
 
-public class Exercicio03 {
+public class Exemplo03 {
     public static void main(String[] args) {
         int num01 = 3, num02 = 7;
 

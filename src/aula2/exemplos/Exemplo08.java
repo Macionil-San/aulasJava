@@ -2,7 +2,7 @@ package aula2.exemplos;
 
 import java.util.Scanner;
 
-public class Exercicio08 {
+public class Exemplo08 {
     public static void main(String[] args) {
         String texto = " esse texto esta na primeira linha \n esse texto esta na segunda linha \n esse texto esta na terceira linha \n\t esse texto esta na quarta linha (COM TABULAÇÃO)";
 
