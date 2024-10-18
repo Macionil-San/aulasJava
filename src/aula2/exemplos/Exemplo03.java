@@ -6,18 +6,17 @@ public class Exemplo03 {
 
         boolean resposta;
 
-        resposta = num01>num02;
+        resposta = num01 > num02;
         System.out.println(num01 + " > " + num02 + resposta);
-        resposta = num01<num02;
+        resposta = num01 < num02;
         System.out.println(num01 + " < " + num02 + resposta);
-        resposta = num01>=num02;
+        resposta = num01 >= num02;
         System.out.println(num01 + " >= " + num02 + resposta);
-        resposta = num01<=num02;
+        resposta = num01 <= num02;
         System.out.println(num01 + " <= " + num02 + resposta);
 
         resposta = num01 != num02;
         System.out.println(num01 + " != " + num02 + resposta);
-
 
 
     }

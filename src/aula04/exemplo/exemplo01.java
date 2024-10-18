@@ -9,9 +9,9 @@ public class exemplo01 {
 
         System.out.println("digite um numero inteiro");
         x = scanner.nextInt();
-        if (x>=30){
+        if (x >= 30) {
             System.out.println("O numero é maior ou igual a 30");
-        }else{
+        } else {
             System.out.println("O numero é menor que 30");
         }
         scanner.close();

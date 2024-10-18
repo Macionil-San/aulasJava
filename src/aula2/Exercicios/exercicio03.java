@@ -12,8 +12,8 @@ public class exercicio03 {
         double varDouble = varInt;
 
 
-
         System.out.println("o número digitado (int): " + varInt);
         System.out.println("o número digitado (double): " + varDouble);
+        scanner.close();
     }
 }

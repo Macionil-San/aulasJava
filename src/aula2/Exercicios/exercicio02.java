@@ -7,7 +7,7 @@ public class exercicio02 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite a quantidade de horas trabalhadas:  ");
 
-        int horasTrabalhadas =  scanner.nextInt();
+        int horasTrabalhadas = scanner.nextInt();
 
         System.out.print("Digite o valor de horas trabalhadas:  ");
         int valorPorHora = scanner.nextInt();

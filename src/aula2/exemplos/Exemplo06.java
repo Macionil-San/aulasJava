@@ -7,7 +7,7 @@ public class Exemplo06 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("digite um número inteiro:  ");
-        int varInt= scanner.nextInt();
+        int varInt = scanner.nextInt();
         long varLong = varInt;
         float varFloat = varInt;
 

@@ -9,11 +9,11 @@ public class Exemplo08 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite sua idade:  ");
 
-        int idade= scanner.nextInt();
+        int idade = scanner.nextInt();
         scanner.nextLine();  //ESSE COMANDO SERVE PRA CONSUMIR O \n QUE O nextInt DEIXOU NA MEMÓRIA
         System.out.print("Digite seu nome: ");
         String nome = scanner.nextLine();
 
-        System.out.print("Seu nome é " +nome+ "e sua idade é " +idade);
+        System.out.print("Seu nome é " + nome + "e sua idade é " + idade);
     }
 }
