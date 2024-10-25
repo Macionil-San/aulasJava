@@ -1,4 +1,4 @@
-package auala05.exemplos;
+package aula05.exemplos;
 
 import java.util.Scanner;
 

@@ -1,6 +1,4 @@
-package auala05.exemplos;
-
-import java.util.Scanner;
+package aula05.exemplos;
 
 public class exemplo05 {
 

@@ -1,14 +1,14 @@
-package auala05.exercicios;
+package aula05.exemplos;
 
 import java.util.Scanner;
+public class exemplo01 {
 
-public class exercicio01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         int idade = 0;
 
-        while (idade < 15) {
+        while (idade < 15){
 
             idade = scanner.nextInt();
             System.out.println(idade);
@@ -19,3 +19,4 @@ public class exercicio01 {
         scanner.close();
     }
 }
+
