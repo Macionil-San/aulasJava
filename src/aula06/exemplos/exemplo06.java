@@ -16,7 +16,7 @@ public class exemplo06 {
             }
 
 
-            String[][] matrizNomes = {{"rms", "mkc"}, {"smr", "sgo"}};
+            String[][] matrizNomes = {{"rms", "mkc"}, {"sor", "sgo"}};
 
             for (int linha = 0; linha < matrizNomes.length; linha++) {
                 for (int colunas = 0; colunas < matrizNomes[linha].length; colunas++) {
