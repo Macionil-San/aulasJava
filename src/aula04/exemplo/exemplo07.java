@@ -1,6 +1,6 @@
 package aula04.exemplo;
 
-public class exercicio07 {
+public class exemplo07 {
 
     public static void main(String[] args) {
 

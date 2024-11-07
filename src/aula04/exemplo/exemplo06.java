@@ -1,6 +1,6 @@
 package aula04.exemplo;
 
-public class exercicio06 {
+public class exemplo06 {
     public static void main(String[] args) {
 
         int varInt = 51
