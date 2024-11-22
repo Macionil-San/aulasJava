@@ -9,12 +9,23 @@ public class exercicio08 {
 
         int num;
         int impar;
-        int par;
+        int par = 0;
 
         for (int i = 1; i < 11; i++){
             System.out.println("numero " + i + ": ");
             num = scanner.nextInt();
 
+            if (num % 2 == 0){
+
+             par = num;
+                System.out.println("esse num é par: " + par);
+            }else {
+
+                impar = num;
+                System.out.println("esse mum é impar: " + impar);
+            }
+
+            System.out.println("existem " + par);
 
         }
 
