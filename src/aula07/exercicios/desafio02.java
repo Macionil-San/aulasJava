@@ -61,7 +61,15 @@ public class desafio02 {
     }
 
     public static void exibirUsuario() {
-        System.out.println("exibir");
+        String tabela = "";
+        for (String[] linhas : matrizCadastro) {
+            for (int colunas = 0; colunas < matrizCadastro[0].length; colunas++) {
+                tabela += linhas[colunas] + "\t\t";
+
+            }
+            tabela += "\n";
+        }
+        System.out.println(tabela);
     }
 
     private static void cadastrarUsuario() {
@@ -89,16 +97,6 @@ public class desafio02 {
             }
         }
         matrizCadastro = novamatrizCadastro;
-
-        String tabela = "";
-        for (String[] linhas : matrizCadastro) {
-            for (int colunas = 0; colunas < matrizCadastro[0].length; colunas++) {
-                tabela += linhas[colunas] + "\t\t";
-
-            }
-            tabela += "\n";
-        }
-        System.out.println(tabela);
 
     }
 
