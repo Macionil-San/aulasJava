@@ -68,7 +68,7 @@ public class desafio02 {
                 tabela.append(String.format("%-"+ tamanhoColuna+"s|",  linhas[colunas]));
 
             }
-            tabela.append("\n"); //PARA PULAR PRA PROXIMA LINHA
+            tabela.append("\n"); //PARA PULAR PRA PROXIMA LINHAA
         }
         System.out.println(tabela);
 
