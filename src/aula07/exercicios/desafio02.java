@@ -64,8 +64,8 @@ public class desafio02 {
         StringBuilder tabela = new StringBuilder();
         for (String[] linhas : matrizCadastro) {
             for (int colunas = 0; colunas < matrizCadastro[0].length; colunas++) {
-                int tamanhoColuna = colunas == 0 ? 5 : (colunas == 2? 10 : 25);
-                tabela.append(String.format("%-"+ tamanhoColuna+"s|",  linhas[colunas]));
+                int tamanhoColuna = colunas == 0 ? 5 : (colunas == 2 ? 10 : 25);
+                tabela.append(String.format("%-" + tamanhoColuna + "s|", linhas[colunas]));
 
             }
             tabela.append("\n"); //PARA PULAR PRA PROXIMA LINHAA
@@ -75,13 +75,13 @@ public class desafio02 {
 
     }
 
-    public static void cadastrarUsuario(){
+    public static void cadastrarUsuario() {
         System.out.print("Digite a quantidade de usuários que deseja cadastrar: ");
         int qtdUsuarios = scanner.nextInt();
-        String[][] novaMatriz = new String[matrizCadastro.length+qtdUsuarios][cabecalho.length];
+        String[][] novaMatriz = new String[matrizCadastro.length + qtdUsuarios][cabecalho.length];
 
         for (int linha = 0; linha < matrizCadastro.length; linha++) {
-            novaMatriz[linha] = Arrays.copyOf(matrizCadastro[linha],matrizCadastro[linha].length);
+            novaMatriz[linha] = Arrays.copyOf(matrizCadastro[linha], matrizCadastro[linha].length);
         }
 
         System.out.println("Preencha os dados a seguir:");
@@ -101,6 +101,19 @@ public class desafio02 {
     }
 
     public static void atualizarUsuario() {
+
+        exibirUsuario();
+
+        System.out.println("\n Digite o id do usuario para atualizar");
+        int idEscolhido = scanner.nextInt();
+        scanner.nextLine();
+
+        System.out.println(cabecalho[0] + idEscolhido);
+        for (int coluna = 1; coluna < cabecalho.length; coluna++) {
+            System.out.println(cabecalho[coluna] + ": ");
+            matrizCadastro[idEscolhido][coluna] = scanner.nextLine();
+        }
+        exibirUsuario();
     }
 
     public static void deletarUsuario() {
