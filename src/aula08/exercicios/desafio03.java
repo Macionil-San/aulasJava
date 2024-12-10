@@ -1,9 +1,10 @@
-package aula07.exercicios;
+package aula08.exercicios;
 
+import java.io.*;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class desafio02 {
+public class desafio03 {
     static Scanner scanner = new Scanner(System.in);
     static String[] cabecalho = {"id", "nome", "telefone", "email"};
     static String[][] matrizCadastro = {{"", ""}};
@@ -98,6 +99,7 @@ public class desafio02 {
             }
         }
         matrizCadastro = novaMatriz;
+        salvarDadosNoArquivo();
     }
 
     public static void atualizarUsuario() {
@@ -114,6 +116,7 @@ public class desafio02 {
             matrizCadastro[idEscolhido][coluna] = scanner.nextLine();
         }
         exibirUsuario();
+        salvarDadosNoArquivo();
     }
 
     public static void deletarUsuario() {
@@ -136,7 +139,27 @@ public class desafio02 {
         matrizCadastro = novaMatriz;
         System.out.println("Usuario deltado com sucesso!");
         exibirUsuario();
+        salvarDadosNoArquivo();
     }
 
 
+    public static void salvarDadosNoArquivo(){
+        try( BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(""));){
+            for (String[] linha: matrizCadastro){
+               bufferedWriter.write( String.join(",",linha)+ "\n");
+
+            }
+        } catch (Exception e) {
+            throw new RuntimeException();
+        }
+    }
+    public static void carregarDadosDoArquivo(){
+
+        try(BufferedReader bufferedReader = new BufferedReader(new FileReader(""))) {
+
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
