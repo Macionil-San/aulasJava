@@ -9,6 +9,7 @@ public class desafio03 {
     static String[] cabecalho = {"id", "nome", "telefone", "email"};
     static String[][] matrizCadastro = {{"", ""}};
 
+    static File arquivoBancoDeDados = new File(System.getProperty("user.home"), "bancoDeDados.txt"); //faz tentar le na pasta de usario
     public static void main(String[] args) {
         matrizCadastro[0] = cabecalho;
 
@@ -77,19 +78,19 @@ public class desafio03 {
     }
 
     public static void cadastrarUsuario() {
+
         System.out.print("Digite a quantidade de usuários que deseja cadastrar: ");
         int qtdUsuarios = scanner.nextInt();
-        String[][] novaMatriz = new String[matrizCadastro.length + qtdUsuarios][cabecalho.length];
+        scanner.nextLine();
 
+        String[][] novaMatriz = new String[matrizCadastro.length + qtdUsuarios][cabecalho.length];
         for (int linha = 0; linha < matrizCadastro.length; linha++) {
             novaMatriz[linha] = Arrays.copyOf(matrizCadastro[linha], matrizCadastro[linha].length);
         }
 
         System.out.println("Preencha os dados a seguir:");
+
         for (int linha = matrizCadastro.length; linha < novaMatriz.length; linha++) {
-
-            System.out.println("Cadastro da pessoa " + linha);
-
             System.out.println(cabecalho[0] + ": " + linha);
             novaMatriz[linha][0] = String.valueOf(linha); //Converte valor inteiro para String
 
@@ -144,7 +145,7 @@ public class desafio03 {
 
 
     public static void salvarDadosNoArquivo(){
-        try( BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(""));){
+        try( BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("arquivoBancoDeDados"));){
             for (String[] linha: matrizCadastro){
                bufferedWriter.write( String.join(",",linha)+ "\n");
 
@@ -153,12 +154,38 @@ public class desafio03 {
             throw new RuntimeException();
         }
     }
+
     public static void carregarDadosDoArquivo(){
+        String linha;
+        StringBuilder conteuDoArquivo = new StringBuilder();
 
-        try(BufferedReader bufferedReader = new BufferedReader(new FileReader(""))) {
+        if (!arquivoBancoDeDados.exists()){
+            try {
+                if (arquivoBancoDeDados.createNewFile()) {
+                    System.out.println("Arquivo criado " + arquivoBancoDeDados.getName() + "com sucesso");
 
+                }
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
 
-        } catch (IOException e) {
+        try(BufferedReader bufferedReader = new BufferedReader(new FileReader("arquivoBancoDeDados"))) {
+
+            while ((linha = bufferedReader.readLine())!= null ){
+            conteuDoArquivo.append(linha).append("\n");           // append coloca na memoria // o otro append faz adiciona o /n
+
+        }
+
+         String[] linhaDadosUsuario = conteuDoArquivo.toString().split("/n");
+            matrizCadastro = new String[linhaDadosUsuario.length][cabecalho.length];
+
+            for (int i = 0; i <linhaDadosUsuario.length ; i++) {
+                matrizCadastro[i] = linhaDadosUsuario[i].split(",");
+
+            }
+
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }
     }
