@@ -1,6 +1,5 @@
-package aula06.exercicios;
+package desafios;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class desafio {

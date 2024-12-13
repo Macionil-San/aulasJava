@@ -1,4 +1,4 @@
-package aula08.exercicios;
+package desafios;
 
 import java.io.*;
 import java.util.Arrays;
