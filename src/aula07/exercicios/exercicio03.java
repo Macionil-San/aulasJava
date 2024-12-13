@@ -7,7 +7,7 @@ public class exercicio03 {
     public class Exercicio03_Dobrar {
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
-            System.out.println("Digite um número inteiro: ");
+            System.out.println(" digite um número inteiro: ");
             int numero1 = scanner.nextInt();
 
             int dobro = dobrar(numero1);
